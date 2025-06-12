@@ -31,9 +31,8 @@ const Hero = ({
                 strings: [
                   "Full Stack Developer",
                   "React Specialist",
+                  "Mobile App Developer with Expo",
                   "Node.js Expert",
-                  "Mobile App Developer",
-                  "Database Architect",
                 ],
                 autoStart: true,
                 loop: true,

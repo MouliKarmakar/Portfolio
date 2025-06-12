@@ -5,24 +5,30 @@ const TechStack = () => {
   const frontendTech = [
     { name: "Next.js", level: 90, color: "from-blue-500 to-cyan-500" },
     { name: "React", level: 95, color: "from-cyan-500 to-blue-500" },
-    { name: "Redux", level: 85, color: "from-purple-500 to-pink-500" },
+    { name: "Redux", level: 70, color: "from-purple-500 to-pink-500" },
   ];
 
   const backendTech = [
-    { name: "Node.js", level: 90, color: "from-green-500 to-emerald-500" },
-    { name: "Express", level: 88, color: "from-gray-600 to-gray-800" },
+    { name: "Node.js", level: 60, color: "from-green-500 to-emerald-500" },
+    { name: "Express", level: 50, color: "from-gray-600 to-gray-800" },
   ];
 
   const databaseTech = [
-    { name: "MongoDB", level: 85, color: "from-green-600 to-green-800" },
-    { name: "SQL", level: 80, color: "from-blue-600 to-indigo-600" },
+    { name: "MongoDB", level: 50, color: "from-green-600 to-green-800" },
+    // { name: "SQL", level: 80, color: "from-blue-600 to-indigo-600" },
   ];
 
   const mobileTech = [
-    { name: "React Native (Expo)", level: 82, color: "from-indigo-500 to-purple-500" },
+    { name: "React Native (Expo)", level: 70, color: "from-indigo-500 to-purple-500" },
   ];
 
-  const TechCategory = ({ title, technologies }: { title: string; technologies: any[] }) => (
+  interface Technology {
+    name: string;
+    level: number;
+    color: string;
+  }
+
+  const TechCategory = ({ title, technologies }: { title: string; technologies: Technology[] }) => (
     <Card className="bg-slate-800/50 border-slate-700 p-6">
       <h3 className="text-xl font-semibold text-white mb-6 text-center">{title}</h3>
       <div className="space-y-4">
