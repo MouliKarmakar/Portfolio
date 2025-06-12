@@ -19,7 +19,7 @@ const Index = () => {
       
       <main className="relative">
         <section id="hero" className="min-h-screen">
-          <Hero />
+          <Hero setActiveSection={setActiveSection}/>
         </section>
         
         <section id="about" className="py-20">
